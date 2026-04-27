@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McNiel & Yeet Concrete Suppies</title>
+    <link rel="stylesheet" href="includes/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/letters_Logo.png" alt="" id="logo">
+        <p id="header">McNiel & Yeet<br>Concrete Supplies</p>
+    </header>
+    <nav>
+        <a href="index.html"><h1>Home</h1></a>
+        <a href="products.html"><h1>Concrete Products</h1></a>
+        <a href="about.html"><h1>About</h1></a>
+        <a href="contact.html"><h1>Contact Us</h1></a>
+        <a href="job.html"><h1>Job Estimate</h1></a>
+    </nav>
+    <main>
+        <section>
+            <form>
+                <div>
+                    <div>
+                        <h2>Job Calculator</h2>
+                        <label for="len">Enter the lenght (m):</label>
+                        <input type="text" id="len"><br><br>
+                        <label for="wid">Enter the width (m):</label>
+                        <input type="text" id="wid"><br><br>
+                        <label for="dep">Enter the depth (m):</label>
+                        <input type="text" id="dep"><br><br>
+                        <button type="button" id="btnArea">Calculate</button>
+                    </div>
+                    <div>
+                        <h3>The Calculated Area Is (m<sup>3</sup>):</h3>
+                        <p id="resultArea">&nbsp;</p>
+                    </div>                    
+                </div>
+            </form>
+        </section>
+        <section>
+            <form>
+                <div>
+                    <h2>Concrete Type</h2>
+                    <input type="radio" id="stand" name="con-type" value="75">
+                    <label for="stand">Standard Concrete ($75/m<sup>3</sup>)</label><br><br>
+
+                    <input type="radio" id="exp-agg" name="con-type" value="125">
+                    <label for="exp-agg">Exposed Aggregate Concrete ($125/m<sup>3</sup>)</label><br><br>
+
+                    <input type="radio" id="col" name="con-type" value="100">
+                    <label for="col">Coloured Concrete ($100/m<sup>3</sup>)</label><br><br>
+
+                    <input type="radio" id="pol" name="con-type" value="200">
+                    <label for="pol">Polished Concrete ($200/m<sup>3</sup>)</label><br><br>
+
+                    <button type="button" id="btnPrice">Calculate</button>
+                </div>
+                <div>
+                    <h3>The Calculated Price Is ($):</h3>
+                    <p id="resultPrice">&nbsp;</p>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <br>
+        <p id="footer">&copy; McNiel & Yeet Concrete Supplies</p>
+        <br>
+    </footer>
+    <script src="includes/script.js"></script>
+</body>
+</html>
